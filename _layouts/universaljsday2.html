@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <meta property="og:image" content="{{ page.base_url }}/images/link_preview.png" />
         <meta property="og:url" content="{{ page.base_url }}" />
         <meta property="og:title" content="{{ site.data.conference.name }} - {{ site.data.location.city }}, {{ site.data.conference.day }} {{ site.data.conference.year }} - Conference and Workshop" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="{{ page.base_url }}/images/link_preview.png" />
 
         <title>{{ site.data.conference.name }} - {{ site.data.location.city }}, {{ site.data.conference.day }} {{ site.data.conference.year }}</title>
 
@@ -57,7 +57,7 @@
         <div class="share">
             <div class="addthis_wrapper">
             <!-- AddThis Button BEGIN -->
-            <div class="addthis_toolbox addthis_default_style ">
+            <div class="addthis_toolbox addthis_default_style " addthis:url="http://www.universaljsday.com">
                 <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
                 <a class="addthis_button_tweet"></a>
                 <a class="addthis_counter addthis_pill_style"></a>
