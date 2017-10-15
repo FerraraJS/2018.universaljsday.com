@@ -220,6 +220,18 @@ footer{
     height: 15rem;
 }
 
+.column_3{
+    width: 15rem;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    padding: 0rem 0.5rem;
+
+    @media screen and (max-width: 63rem){
+        width: 100%;
+    }
+}
+
 .column_4{
     width: 20rem;
     display: block;
@@ -244,7 +256,7 @@ footer{
     }
 }
 
-.clear{
+.clear, .row{
     clear: both;
 }
 
@@ -262,4 +274,29 @@ footer{
 
 .patr_sponsor {
     float: left;
+}
+
+.video{
+    position: relative;
+    padding-bottom: 0.5rem;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    a {
+        color: #333333;
+        text-decoration: none;
+
+        &:hover, &:active {
+            text-decoration: none;
+            color: #333333;
+        }
+
+        span{
+            padding: 0.2rem 0rem;
+            display: block;
+        }
+    }
 }
