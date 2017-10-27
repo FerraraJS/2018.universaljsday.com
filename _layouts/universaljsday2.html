@@ -38,16 +38,16 @@
             <p>
                 {% if site.data.config.partner %}
                 <a href="{{ site.data.partner.url }}" title="{{ site.data.partner.name }}">
-                    <img src="./images/partners/{{ site.data.partner.alias }}.png" alt="{{ site.data.partner.name }}" />
+                    <img src="./images/partners/{{ site.data.partner.alias }}_stamp.png" alt="{{ site.data.partner.name }}" />
                 </a>
                 <span>+</span>
                 {% endif %}
                 <a href="http://www.grusp.org" title="GrUSP">
-                    <img src="./images/partners/grusp.png" alt="GrUSP" />
+                    <img src="./images/partners/grusp_stamp.png" alt="GrUSP" />
                 </a>
                 <span>+</span>
                 <a href="http://www.cnafe.it/" title="CNA Ferrara">
-                    <img src="./images/partners/cna-ferrara.png" alt="CNA Ferrara" />
+                    <img src="./images/partners/cna-ferrara_stamp.png" alt="CNA Ferrara" />
                 </a>
             </p>
             <span>{% if site.data.config.partner %} {{ site.data.i18n.presents }} {% else %} {{ site.data.i18n.present }} {% endif %}</span>
