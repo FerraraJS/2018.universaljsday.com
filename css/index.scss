@@ -276,9 +276,15 @@ footer{
     height: auto;
 }
 
-.patr_sponsor {
-    float: left;
+#sponsor .patr_sponsor a img{
+    width: 10rem;
+    max-width: 100%;
+    height: auto;
 }
+
+// .patr_sponsor {
+//     float: left;
+// }
 
 .video{
     position: relative;
