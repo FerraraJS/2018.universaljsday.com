@@ -91,6 +91,31 @@ header{
         line-height: 2rem;
         color: $header-datelocation-color;
         text-shadow: 0px 0px 2px #000000;
+
+        & > span{
+            position: relative;
+        }
+
+        .new-date {
+            display: block;
+            background: #f7df1e;
+            color: #333333;
+            padding: 0.2rem;
+            animation: blinker 1.5s ease-in-out infinite;
+            text-shadow: 0px 0px 0px transparent;
+            position: absolute;
+            top: 0.3rem;
+            left: 100%;
+            font-size: 1rem;
+            line-height: 1rem;
+            font-weight: bold;
+            margin-left: 1rem;
+            //transform: rotate(-45deg);
+        }
+        
+        @keyframes blinker {  
+            50% { opacity: 0; }
+        }
     }
 }
 
