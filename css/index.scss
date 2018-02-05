@@ -59,6 +59,7 @@ header{
                 width: 7rem;
                 height: 7rem;
                 box-shadow: 0px 0px 8px #000000;
+                margin-bottom: 1.5rem;
             }
         }
 
@@ -73,6 +74,7 @@ header{
     & > span{
         display: block;
         margin: 1.5rem;
+        margin-top: 0rem;
         text-transform: uppercase;
         color: $header-presents-color;
     }
@@ -111,6 +113,14 @@ header{
             font-weight: bold;
             margin-left: 1rem;
             //transform: rotate(-45deg);
+        }
+
+        @media screen and (max-width: 600px) {
+            .new-date{
+                left: auto;
+                right: 0px;
+                top: 100%;
+            }
         }
         
         @keyframes blinker {  
