@@ -25,7 +25,7 @@
                 <li><a href="#">{{ site.data.conference.name }}</a></li>
                 <li><a href="#info">{{ site.data.i18n.info}}</a></li>
                 {% if site.data.config.call_for_paper %}<li><a href="#cfp">{{ site.data.i18n.call_for_paper}}</a></li>{% endif %}
-                {% if site.data.config.speakers %}<li><a href="#speakers">{{ site.data.i18n.speakers}}</a></li>{% endif %}
+                {% if site.data.config.speakers %}<li><a href="#speakers">{{ site.data.i18n.speakers}}</a></li>{% else %}<li><a href="#speakers">{{ site.data.i18n.announcements}}</a></li>{% endif %}
                 {% if site.data.config.workshop %}<li><a href="#">{{ site.data.i18n.workshop}}</a></li>{% endif %}
                 {% if page.tickets %} <li><a href="#tickets">{{ site.data.i18n.tickets}}</a></li> {% endif %}
                 <li><a href="#location">{{ site.data.i18n.location}}</a></li>
