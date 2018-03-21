@@ -7,6 +7,10 @@ $secondary: #FFFFFF;
 $dark: #212121;
 $enable-rounded: false;
 
+$h3-font-size:1.5rem;
+$h4-font-size:1.25rem;
+$h5-font-size: 1rem;
+
 @import "bootstrap/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import url('https://use.fontawesome.com/releases/v5.0.8/css/solid.css');
@@ -87,6 +91,7 @@ body {
             @extend .p-3;
 
             & > h3{
+                @extend .pb-3;
                 text-align: center;
                 text-transform: uppercase;
 
@@ -142,23 +147,36 @@ body {
             & > .detail {
                 @extend .col-sm-10;
 
+
                 & > div {
-                    @extend .media;
+                    @extend .row;
 
-                    & > img {
-                        @extend .mr-3;
+                    & > .picture {
+                        @extend .col-sm-3;
+                        @extend .pb-3;
 
-                        width: 6rem;
-                        height: 6rem;
-
+                        & > img {
+                            width: 100%;
+                            height: auto;
+                        }
                     }
-                    & > div {
-                        @extend .media-body;
+                    & > .description {
+                        @extend .col-sm-9;
+                        @extend .pb-3;
+
+                        & > h5 {
+                            color: $orange;
+                        }
                     }
                 }
 
                 @include media-breakpoint-up(sm) {
                     border-left: 1px solid #DDDDDD;
+
+                    & > div > .description {
+                        padding-left: 0px;
+                    }
+
                     &:before {
                         content: "";
                         width: 12px;
@@ -184,10 +202,12 @@ body {
 
             & > .picture {
                 @extend .col-sm-4;
+                @extend .pb-3;
     
             }
             & > .intro {
                 @extend .col-sm-8;
+                @extend .pb-3;
             }
             & > .dependencies{
                 @extend .col-12;
@@ -223,6 +243,45 @@ body {
             }
             & > .train{
                 @extend .col-md-8;
+            }
+        }
+    }
+}
+
+#video {
+    & > div {
+        & > div {
+            @extend .row;
+            @extend .pt-3;
+
+            & > div{
+                @extend .col-md-3;
+            }
+        }
+    }
+}
+
+#sponsor {
+    & > div {
+        & > div {
+            @extend .row;
+            @extend .pt-3;
+
+            & > .third{
+                @extend .col-sm-4;
+            }
+            & > .half{
+                @extend .col-sm-6;
+            }
+
+            & > a {
+                @extend .col-sm-3;
+                @extend .pb-3;
+
+                & > img {
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
     }

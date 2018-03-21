@@ -2,22 +2,41 @@
   name: What Service Workers can do
   speaker_name: Maurizio Mangione
   speaker_twitter: granze
-  time_start: "9:45"
-  time_end: "10:30"
   talk_abstract: Le Progressive Web App sono un insieme di tecnologie che permettono di implementare comportamenti prima possibili solo nelle applicazioni mobile native. Il cuore delle PWA sono i Service Worker, la feature della piattaforma web più interessante e rivoluzionaria dall'uscita delle chiamate AJAX. Durante questo talk scopriremo i segreti dei Service Worker, quello che possono fare e come utilizzarli ora in produzione.
 
 - type: talk
-  name: What Service Workers can do
-  speaker_name: Maurizio Mangione
-  speaker_twitter: granze
-  time_start: "9:45"
-  time_end: "10:30"
-  talk_abstract: Le Progressive Web App sono un insieme di tecnologie che permettono di implementare comportamenti prima possibili solo nelle applicazioni mobile native. Il cuore delle PWA sono i Service Worker, la feature della piattaforma web più interessante e rivoluzionaria dall'uscita delle chiamate AJAX. Durante questo talk scopriremo i segreti dei Service Worker, quello che possono fare e come utilizzarli ora in produzione.
+  name: Dealing with CSS universally
+  speaker_name: Simon Vocella
+  speaker_twitter: simonvocella
+  talk_abstract: Vorresti riutilizzare il tuo CSS nella tua applicazione mobile? In questa presentazione mostreremo come un nostro componente React  può essere riutilizzato in un applicazione React Native concentrandoci soprattutto su come portare lo stile da una piattaforma a un'altra e mostrando pro e contro di questa portabilità.
 
 - type: talk
-  name: What Service Workers can do
-  speaker_name: Maurizio Mangione
-  speaker_twitter: granze
-  time_start: "9:45"
-  time_end: "10:30"
-  talk_abstract: Le Progressive Web App sono un insieme di tecnologie che permettono di implementare comportamenti prima possibili solo nelle applicazioni mobile native. Il cuore delle PWA sono i Service Worker, la feature della piattaforma web più interessante e rivoluzionaria dall'uscita delle chiamate AJAX. Durante questo talk scopriremo i segreti dei Service Worker, quello che possono fare e come utilizzarli ora in produzione.
+  name: Fun with Bluetooth
+  speaker_name: Niels Leenheer
+  speaker_twitter: html5test
+  talk_abstract: Time for JavaScript to get physical. With WebBluetooth the Chrome browser can actually take control of all kinds of physical devices in the real world like lightbulbs, robots and even drones. And nowadays you can even run JavaScript straight on microcontrollers and even little Bluetooth beacons. This talk will teach you the basics that you need to get started and give a peek at some more advanced topics like building your own Bluetooth devices using just JavaScript.
+
+- type: talk
+  name: "Mobile App Development:  Primi passi con NativeScript e Angular 2"
+  speaker_name: Filippo Matteo Riggio
+  speaker_twitter: fmriggio
+  talk_abstract: Attraverso un esempio pratico di una piccola app, verranno illustrate le basi di NativeScript su come costruire un’app, gestire la UI, il database, la cache, ecc.
+
+- type: talk
+  name: 👍 Hitchhiker's guide to the "Universe"
+  speaker_name: Giacomo Zinetti
+  speaker_twitter: gcmznt
+  talk_abstract: "Costruiamo passo-passo una Universal App col minor sforzo (e codice) possibile usando Nextjs e React, gestiamo routing dinamico con Express, aggiungiamo un pizzico di dati con Apollo e GraphQL, stiliamo il tutto con CSS-in-JS e documentiamo con Storybook.
+Sembra complesso ma scopriremo come gli strumenti che abbiamo a disposizione ci aiutino a fare tutto in modo semplice e lineare."
+
+- type: talk
+  name: Realizzare Applicazioni desktop con Electron e Angular
+  speaker_name: Michele Aponte
+  speaker_twitter: apomic80
+  talk_abstract: Nonostante tutti dicano che il desktop è morto ci sono ancora tante applicazioni e utenti che vedono in una applicazione installabile sul proprio PC tanti vantaggi. Con Electron possiamo sfruttare le nostre competenze web per realizzare una application desktop multipiattaforma, che può sfruttare features del sistema operativo a cui una app web non può accedere. In questa sessione vedremo, con un approccio esclusivamente pratico, come realizzare con Electron e Angular una classica applicazione gestionale da installare sul nostro desktop.
+
+- type: talk
+  name: "Telefono SIP WebRTC nel tuo browser: da sipML5 a Janus"
+  speaker_name: Alessandro Polidori
+  speaker_twitter: ale_polidori
+  talk_abstract: Vuoi realizzare un telefono direttamente nella tua web app? Vedremo insieme quali sono state le scelte tecnologiche con le quali si è realizzato un telefono SIP WebRTC direttamente integrato nel browser per fornire una soluzione di Unified Communication tramite WebApp. Considereremo i problemi e vantaggi incontrati con due differenti soluzioni, passando da sipML5 a Janus Gateway.
