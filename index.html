@@ -1,37 +1,16 @@
 ---
-layout: universaljsday2
-title: Universal JS Day
-ttl: Universal JS Day
-conf_data: Ferrara, 20 Aprile 2018
-base_url: http://2018.universaljsday.com
-workshop: true
-cfp: true
-cfp_url: https://docs.google.com/forms/d/e/1FAIpQLSeYvQOwVwAn9_nJleql2Vxfy1xjmcpymcs6jfWk_TVPoiypIA/viewform
-cfp_end: 11 marzo 2018
-speakers: false
-cfs: true
-where: cna-ferrara
-tickets: true
-tickets_url: https://eventbrite.com/tickets-external?eid=39908587660&ref=etckt
-location_name: CNA Ferrara
-location_address: Via Caldirolo, 85
-location_city: Ferrara, Italia
-contact_email: info@grusp.org
-partner: Ferrara JS
-partner_slug: ferrarajs
-partner_url: http://www.ferrarajs.com
+layout: universaljsday3
 ---
 
 {% include section-contents.html %}
 
-{% if page.cfp %} {% include section-cfp.html %} {% endif %}
+{% if site.data.config.cfp %} {% include section-cfp.html %} {% endif %}
 
-{% if page.tickets %} {% include section-tickets.html %} {% endif %}
-{% if page.speakers %} {% include section-speakers.html %} {% else %} {% include section-announcements.html %} {% endif %}
-{% if page.workshop %} {% include section-workshop.html %} {% endif %}
+{% if site.data.config.speakers %} {% include section-speakers.html %} {% else %} {% include section-announcements.html %} {% endif %}
+{% if site.data.config.tickets %} {% include section-tickets.html %} {% endif %}
+{% if site.data.config.workshop %} {% include section-workshop.html %} {% endif %}
 
-{% include section-location.html %}
-
-{% include section-videos.html %}
 
 {% include section-sponsors.html %}
+{% include section-videos.html %}
+{% include section-location.html %}

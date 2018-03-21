@@ -1,4 +1,7 @@
-call_for_paper: true
-speakers: false
-workshop: false
+call_for_paper: false
+call_for_sponsor: true
+speakers: true
+workshop: true
 partner: true
+tickets: true
+tickets_url: https://eventbrite.com/tickets-external?eid=39908587660&ref=etckt
