@@ -26,32 +26,25 @@
                 <a href="{{ site.data.partner.url }}" title="{{ site.data.partner.name }}">
                     <img src="./images/partners/{{ site.data.partner.alias }}_stamp.png" alt="{{ site.data.partner.name }}" />
                 </a>
-                <span>+</span>
                 {% endif %}
                 <a href="http://www.grusp.org" title="GrUSP">
                     <img src="./images/partners/grusp_stamp.png" alt="GrUSP" />
                 </a>
-                <span>+</span>
                 <a href="http://www.cnafe.it/" title="CNA Ferrara">
                     <img src="./images/partners/cna-ferrara_stamp.png" alt="CNA Ferrara" />
                 </a>
-            </p>
-            <span>{% if site.data.config.partner %} {{ site.data.i18n.presents }} {% else %} {{ site.data.i18n.present }} {% endif %}</span>
+            </p>            
+            <div class="meta">
+                <span><i class="fas fa-map-marker"></i> {{ site.data.location.city }}, {{ site.data.location.state}} </span>
+                <span><i class="fas fa-calendar-alt"></i> Conferenza {{ site.data.conference.day }} {{ site.data.conference.year }} </span>
+                <span><i class="fas fa-calendar-alt"></i> Workshop {{ site.data.workshop.day }} {{ site.data.workshop.year }}</span>
+            </div>
             <h1 id="conf_name">{{ site.data.conference.name }}</h1>
-            <h2 id="conf_location">{{ site.data.location.city }}, {{ site.data.conference.day }} {{ site.data.conference.year }} + Workshop {{ site.data.workshop.day }} {{ site.data.workshop.year }}</h2>
-
+            <div>
+                <a href="#tickets">Registrati ora</a>
+                <a href="#speakers" class="side">Talks</a>
+            </div>
         </header>
-        <div class="share">
-            <div class="addthis_wrapper">
-            <!-- AddThis Button BEGIN -->
-            <div class="addthis_toolbox addthis_default_style " addthis:url="http://www.universaljsday.com">
-                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-                <a class="addthis_button_tweet"></a>
-                <a class="addthis_counter addthis_pill_style"></a>
-            </div>
-            <!-- AddThis Button END -->
-            </div>
-        </div>
 
         {{ content }}
 
@@ -79,7 +72,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/textfit/2.3.1/textFit.min.js"></script>
         <script>
             textFit(document.getElementById('conf_name'));
-            textFit(document.getElementById('conf_location'));
         </script>
     </body>
 </html>
