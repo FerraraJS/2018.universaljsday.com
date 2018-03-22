@@ -4,12 +4,13 @@
         <h3>Il Programma</h3>
         <div>
             {% for event in site.data.events %}
-            <div>
+            <div class="event {{ event.type }}">
                 <div class="info">
                     {% if event.time_start %} {{ event.time_start }} - {{ event.time_end }} {% endif %}
                 </div>
                 <div class="detail">
                     <h4>{{ event.name }}</h4>
+                    {% if event.type == 'talk' %}
                     <div>
                         <div class="picture">
                             <img src="images/speakers/{{ event.speaker_twitter }}.jpg" alt="{{ event.speaker_name }}" />
@@ -19,6 +20,7 @@
                             <p>{{ event.talk_abstract }}</p>
                         </div>
                     </div>
+                    {% endif %}
                 </div>
             </div>
             {% endfor %}

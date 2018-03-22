@@ -135,7 +135,7 @@ body {
 #speakers{
     & > div > div{
         
-        & > div {
+        & > .event {
             @extend .row;
 
             & > .info {
@@ -185,9 +185,21 @@ body {
                         background: #DDDDDD;
                         position: absolute;
                         left: -6px;
-                        top: 0
+                        top: 0px;
                     }
                 }                
+            }
+        }
+
+        & > .event.social {
+            & > .detail {
+                @extend .pb-3;
+                
+                & > h4 {
+                    color: #555555;
+                    font-style: italic;
+                    font-weight: normal;
+                }
             }
         }
     }
