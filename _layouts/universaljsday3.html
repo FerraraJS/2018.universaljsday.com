@@ -1,77 +1,146 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta property="og:image" content="{{ page.base_url }}/images/link_preview.png" />
-        <meta property="og:url" content="{{ page.base_url }}" />
-        <meta property="og:title" content="{{ site.data.conference.name }} - {{ site.data.location.city }}, {{ site.data.conference.day }} {{ site.data.conference.year }} - Conference and Workshop" />
-        <meta property="og:type" content="website" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ site.data.conference.name }} - {{ site.data.location.city }}, {{ site.data.conference.day }} {{ site.data.conference.year }}</title>
+    <meta property="og:image" content="{{ page.base_url }}/images/link_preview.png" />
+    <meta property="og:url" content="{{ page.base_url }}" />
+    <meta property="og:title" content="{{ site.data.conference.name }} - {{ site.data.location.city }}, {{ site.data.conference.day }} {{ site.data.conference.year }} - Conference and Workshop"
+    />
+    <meta property="og:type" content="website" />
 
-        <link href="css/index.css" rel="stylesheet">
+    <title>{{ site.data.conference.name }} - {{ site.data.location.city }}, {{ site.data.conference.day }} {{ site.data.conference.year
+        }}
+    </title>
 
-        <!--[if lt IE 9]>
+    <link href="css/index.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-    </head>
-    <body>
-        <header>
-            <p>
-                {% if site.data.config.partner %}
-                <a href="{{ site.data.partner.url }}" title="{{ site.data.partner.name }}">
-                    <img src="./images/partners/{{ site.data.partner.alias }}_stamp.png" alt="{{ site.data.partner.name }}" />
-                </a>
-                {% endif %}
-                <a href="http://www.grusp.org" title="GrUSP">
-                    <img src="./images/partners/grusp_stamp.png" alt="GrUSP" />
-                </a>
-                <a href="http://www.cnafe.it/" title="CNA Ferrara">
-                    <img src="./images/partners/cna-ferrara_stamp.png" alt="CNA Ferrara" />
-                </a>
-            </p>            
-            <div class="meta">
-                <span><i class="fas fa-map-marker"></i> {{ site.data.location.city }}, {{ site.data.location.state}} </span>
-                <span><i class="fas fa-calendar-alt"></i> Conferenza {{ site.data.conference.day }} {{ site.data.conference.year }} </span>
-                <span><i class="fas fa-calendar-alt"></i> Workshop {{ site.data.workshop.day }} {{ site.data.workshop.year }}</span>
-            </div>
-            <h1 id="conf_name">{{ site.data.conference.name }}</h1>
-            <div>
-                <a href="#tickets">Registrati ora</a>
-                <a href="#speakers" class="side">Talks</a>
-            </div>
-        </header>
+</head>
 
-        {{ content }}
+<body>
+    <nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <footer>
+        <div id="navbarSupportedContent">
             <ul>
-                {% if site.data.config.partner %}<li><a href="{{ site.data.partner.url }}" target="_blank" title="{{ site.data.partner.name }}">Chi è {{site.data.partner.name}}?</a></li>{% endif %}
-                <li><a href="http://www.grusp.org">Chi è il GrUSP?</a></li>
-                {% if site.data.config.partner %}<li><a href="mailto: {{ site.data.partner.email }}">Contatta {{ site.data.partner.name }}</a></li>{% endif %}
-                <li><a href="mailto: info@grusp.org">Contatta il GrUSP</a></li>
+                <li>
+                    <a href="#">{{ site.data.conference.name }}</a>
+                </li>
+                <li>
+                    <a href="#info">{{ site.data.i18n.info}}</a>
+                </li>
+                {% if site.data.config.call_for_paper %}
+                <li>
+                    <a href="#cfp">{{ site.data.i18n.call_for_paper}}</a>
+                </li>{% endif %} {% if site.data.config.speakers %}
+                <li>
+                    <a href="#speakers">{{ site.data.i18n.speakers}}</a>
+                </li>{% else %}
+                <li>
+                    <a href="#speakers">{{ site.data.i18n.announcements}}</a>
+                </li>{% endif %} {% if site.data.config.workshop %}
+                <li>
+                    <a href="#workshop">{{ site.data.i18n.workshop}}</a>
+                </li>{% endif %} {% if page.tickets %}
+                <li>
+                    <a href="#tickets">{{ site.data.i18n.tickets}}</a>
+                </li> {% endif %}
+                <li>
+                    <a href="#location">{{ site.data.i18n.location}}</a>
+                </li>
+                <li>
+                    <a href="#sponsor">{{ site.data.i18n.sponsor}}</a>
+                </li>
+                <li>
+                    <a href="http://2016.universaljsday.com/" target="_blank">2016</a>
+                </li>
+                <li>
+                    <a href="http://2017.universaljsday.com/" target="_blank">2017</a>
+                </li>
             </ul>
-        </footer>
+        </div>
+    </nav>
+    <header>
+        <p>
+            {% if site.data.config.partner %}
+            <a href="{{ site.data.partner.url }}" title="{{ site.data.partner.name }}">
+                <img src="./images/partners/{{ site.data.partner.alias }}_stamp.png" alt="{{ site.data.partner.name }}" />
+            </a>
+            {% endif %}
+            <a href="http://www.grusp.org" title="GrUSP">
+                <img src="./images/partners/grusp_stamp.png" alt="GrUSP" />
+            </a>
+            <a href="http://www.cnafe.it/" title="CNA Ferrara">
+                <img src="./images/partners/cna-ferrara_stamp.png" alt="CNA Ferrara" />
+            </a>
+        </p>
+        <div class="meta">
+            <span>
+                <i class="fas fa-map-marker"></i> {{ site.data.location.city }}, {{ site.data.location.state}} </span>
+            <span>
+                <i class="fas fa-calendar-alt"></i> Conferenza {{ site.data.conference.day }} {{ site.data.conference.year }} </span>
+            <span>
+                <i class="fas fa-calendar-alt"></i> Workshop {{ site.data.workshop.day }} {{ site.data.workshop.year }}</span>
+        </div>
+        <h1 id="conf_name">{{ site.data.conference.name }}</h1>
+        <div>
+            <a href="#tickets">Registrati ora</a>
+            <a href="#speakers" class="side">Talks</a>
+        </div>
+    </header>
 
-        <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50ac9a3237717dfe" defer async></script>
-        <script type="text/javascript">
+    {{ content }}
+
+    <footer>
+        <ul>
+            {% if site.data.config.partner %}
+            <li>
+                <a href="{{ site.data.partner.url }}" target="_blank" title="{{ site.data.partner.name }}">Chi è {{site.data.partner.name}}?</a>
+            </li>{% endif %}
+            <li>
+                <a href="http://www.grusp.org">Chi è il GrUSP?</a>
+            </li>
+            {% if site.data.config.partner %}
+            <li>
+                <a href="mailto: {{ site.data.partner.email }}">Contatta {{ site.data.partner.name }}</a>
+            </li>{% endif %}
+            <li>
+                <a href="mailto: info@grusp.org">Contatta il GrUSP</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', '{{ site.data.conference.anal_code }}']);
         _gaq.push(['_trackPageview']);
 
-        (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/textfit/2.3.1/textFit.min.js"></script>
-        <script>
-            textFit(document.getElementById('conf_name'));
-        </script>
-    </body>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textfit/2.3.1/textFit.min.js"></script>
+    <script>
+        textFit(document.getElementById('conf_name'));
+    </script>
+</body>
+
 </html>

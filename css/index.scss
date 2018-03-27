@@ -18,13 +18,37 @@ $h5-font-size: 1rem;
 
 
 body {
+    & > nav {
+        @extend .navbar;
+        @extend .navbar-dark;
+        @extend .bg-dark;
+        @extend .navbar-expand-lg;
+
+        & > div{
+            @extend .collapse;
+            @extend .navbar-collapse;
+
+            & > ul {
+                @extend .navbar-nav;
+                @extend .mx-auto;
+
+                & > li {
+                    @extend .nav-item;
+                    & > a {
+                        @extend .nav-link;
+                    }
+                }
+            }
+        }
+    }
+
     & > header {
         @extend .d-flex;
         @extend .flex-column;
         @extend .justify-content-center;
         @extend .align-items-center;
 
-        min-height: 80vh;
+        min-height: 75vh;
         background: url('../images/header_bg.jpg') repeat center center;
         background-size: contain;
         padding: 1rem;
