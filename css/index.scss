@@ -136,7 +136,11 @@ body {
 
         &.alternate{
             @extend .bg-dark;
-            @extend .text-white;
+            @extend .text-secondary;
+
+            & a {
+                @extend .text-secondary;
+            }
         }
 
     }
