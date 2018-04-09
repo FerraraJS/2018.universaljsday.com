@@ -321,7 +321,20 @@ body {
                 & > img {
                     width: 100%;
                     height: auto;
+
                 }
+            }
+
+            &.main_sponsor > a {
+                @extend .col-sm-6;
+            }
+            
+            &.gold_sponsors > a {
+                @extend .col-sm-4;
+            }
+            
+            &.bronze_sponsors > a {
+                @extend .col-sm-3;
             }
         }
     }
