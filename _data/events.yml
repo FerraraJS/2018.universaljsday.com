@@ -70,6 +70,7 @@ Sembra complesso ma scopriremo come gli strumenti che abbiamo a disposizione ci 
   speaker_name: Michele Aponte
   speaker_twitter: apomic80
   talk_abstract: Nonostante tutti dicano che il desktop è morto ci sono ancora tante applicazioni e utenti che vedono in una applicazione installabile sul proprio PC tanti vantaggi. Con Electron possiamo sfruttare le nostre competenze web per realizzare una application desktop multipiattaforma, che può sfruttare features del sistema operativo a cui una app web non può accedere. In questa sessione vedremo, con un approccio esclusivamente pratico, come realizzare con Electron e Angular una classica applicazione gestionale da installare sul nostro desktop.
+  talk_slides: https://www.slideshare.net/apomic80/realizzare-applicazioni-desktop-con-electron-e-angular-97258640
 
 - type: social
   name: Coffee Break
