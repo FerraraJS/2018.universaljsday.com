@@ -15,6 +15,7 @@
   speaker_name: Maurizio Mangione
   speaker_twitter: granze
   talk_abstract: Le Progressive Web App sono un insieme di tecnologie che permettono di implementare comportamenti prima possibili solo nelle applicazioni mobile native. Il cuore delle PWA sono i Service Worker, la feature della piattaforma web più interessante e rivoluzionaria dall'uscita delle chiamate AJAX. Durante questo talk scopriremo i segreti dei Service Worker, quello che possono fare e come utilizzarli ora in produzione.
+  talk_slides: https://docs.google.com/presentation/d/1I_DuNCCc5u_CIu5cgausA9-OeWBuwZiaJrpS3L31c70/edit#slide=id.p
 
 - type: talk
   name: 👍 Hitchhiker's guide to the "Universe"
@@ -24,6 +25,7 @@
   speaker_twitter: gcmznt
   talk_abstract: "Costruiamo passo-passo una Universal App col minor sforzo (e codice) possibile usando Nextjs e React, gestiamo routing dinamico con Express, aggiungiamo un pizzico di dati con Apollo e GraphQL, stiliamo il tutto con CSS-in-JS e documentiamo con Storybook.
 Sembra complesso ma scopriremo come gli strumenti che abbiamo a disposizione ci aiutino a fare tutto in modo semplice e lineare."
+  talk_slides: https://universaljsday2018.slides.giko.it/
 
 - type: social
   name: Coffee Break
@@ -45,6 +47,7 @@ Sembra complesso ma scopriremo come gli strumenti che abbiamo a disposizione ci 
   speaker_name: Andrea Coiutti
   speaker_twitter: andreacoiutti
   talk_abstract: "Negli ultimi mesi ho lavorato al refactor di RuneAudio, un software open source che trasforma mini-pc economici, silenziosi e dai bassi consumi in music player hi-fi. Il risultato (la versione 2.0) è uno stack che parla lo stesso linguaggio: API+websocket in Node.js per il backend, SPA per il frontend. Il percorso è stato anche un playground per sperimentare soluzioni moderne e spingere le performance al massimo: fra gli argomenti trattati ci saranno occlusion culling, lazy loading, caching, job queues, Mithril e Fastify."
+  talk_slides: http://slides.com/andreacoiutti/refactoring-runeaudio/fullscreen#/
 
 - type: social
   name: Pranzo incluso nel costo del biglietto
@@ -58,6 +61,7 @@ Sembra complesso ma scopriremo come gli strumenti che abbiamo a disposizione ci 
   speaker_name: Alessandro Polidori
   speaker_twitter: ale_polidori
   talk_abstract: Vuoi realizzare un telefono direttamente nella tua web app? Vedremo insieme quali sono state le scelte tecnologiche con le quali si è realizzato un telefono SIP WebRTC direttamente integrato nel browser per fornire una soluzione di Unified Communication tramite WebApp. Considereremo i problemi e vantaggi incontrati con due differenti soluzioni, passando da sipML5 a Janus Gateway.
+  talk_slides: https://www.slideshare.net/ale_polidori/telefono-sip-webrtc-nel-tuo-browser-da-sipml5-a-janus
 
 - type: talk
   name: Realizzare Applicazioni desktop con Electron e Angular
@@ -87,6 +91,7 @@ Sembra complesso ma scopriremo come gli strumenti che abbiamo a disposizione ci 
   speaker_name: Niels Leenheer
   speaker_twitter: html5test
   talk_abstract: Time for JavaScript to get physical. With WebBluetooth the Chrome browser can actually take control of all kinds of physical devices in the real world like lightbulbs, robots and even drones. And nowadays you can even run JavaScript straight on microcontrollers and even little Bluetooth beacons. This talk will teach you the basics that you need to get started and give a peek at some more advanced topics like building your own Bluetooth devices using just JavaScript.
+  talk_slides: https://speakerdeck.com/nielsleenheer/fun-with-bluetooth-at-universal-js-day
 
 - type: social
   name: Saluti dallo staff di Universal JS Day

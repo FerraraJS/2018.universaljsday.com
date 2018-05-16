@@ -18,6 +18,9 @@
                         <div class="description">
                             <h5>{{ event.speaker_name }}</h5>
                             <p>{{ event.talk_abstract }}</p>
+                            {% if event.talk_slides %}
+                            <p><a href="{{ event.talk_slides }}" target="_blank">Slides</a></p>
+                            {% endif %}
                         </div>
                     </div>
                     {% endif %}
