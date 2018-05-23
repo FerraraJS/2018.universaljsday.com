@@ -39,6 +39,7 @@ Sembra complesso ma scopriremo come gli strumenti che abbiamo a disposizione ci 
   speaker_name: Filippo Matteo Riggio
   speaker_twitter: fmriggio
   talk_abstract: Attraverso un esempio pratico di una piccola app, verranno illustrate le basi di NativeScript su come costruire un’app, gestire la UI, il database, la cache, ecc.
+  talk_slides: /download/nativescript-slides.pdf
 
 - type: talk
   name: Refactor di un music player hi-fi in JavaScript
@@ -84,6 +85,7 @@ Sembra complesso ma scopriremo come gli strumenti che abbiamo a disposizione ci 
   speaker_name: Simon Vocella
   speaker_twitter: simonvocella
   talk_abstract: Vorresti riutilizzare il tuo CSS nella tua applicazione mobile? In questa presentazione mostreremo come un nostro componente React  può essere riutilizzato in un applicazione React Native concentrandoci soprattutto su come portare lo stile da una piattaforma a un'altra e mostrando pro e contro di questa portabilità.
+  talk_slides: https://speakerdeck.com/voxsim/dealing-with-css-universally
 
 - type: talk
   name: Fun with Bluetooth
